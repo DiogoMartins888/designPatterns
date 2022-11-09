@@ -3,7 +3,7 @@ package com.aor.designpatterns;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract public class Bar {
+public abstract class Bar {
     protected boolean happyHour;
     List<BarObserver> observers;
 
