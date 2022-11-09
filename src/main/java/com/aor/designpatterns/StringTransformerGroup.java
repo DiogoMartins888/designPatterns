@@ -8,4 +8,11 @@ public class StringTransformerGroup implements StringTransformer {
     public StringTransformerGroup(List<StringTransformer> transformers) {
         this.transformers = transformers;
     }
+
+    @Override
+    public void execute(StringDrink drink) {
+        for (StringTransformer transformer : this.transformers) {
+            transformer.execute(drink);
+        }
+    }
 }
